@@ -179,6 +179,63 @@ a{
 
 }
 
+/**Sheader PERFIL**/
+header{
+    width: 100%;
+    height:500px;
+    background-image: url(../img/banner.jpg);
+    background-size: cover ;
+    display: flex;
+    align-items: flex-end;
+    padding-top: 150px;;
+}
+
+
+.header__titulo{
+    font-family: 'Roboto Slab', serif;
+    font-weight: bolder;
+    font-size: 40px;
+    color: white;
+    margin: 0 auto;
+    padding:15px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px black;
+}
+
+/**section profile**/
+.profile, .quote, .about{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section__titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #63458A;
+    margin: 20px auto;
+    padding:15px;
+    text-align: center;
+}
+.profile__img{
+    width: 200px;
+    border-radius: 100%;
+    margin-bottom: 45px;
+    
+}
+.profile__texto{
+    width: 75%;
+    text-align: justify;
+    line-height: 30px;
+    
+}
+
 
 
 
