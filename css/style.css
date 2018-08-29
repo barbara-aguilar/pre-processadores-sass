@@ -93,8 +93,12 @@ li{
 
 /**section Perfil**/
 .perfil{
-    width:70%;
+    width:100%;
     margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .perfil__titulo{
@@ -102,7 +106,6 @@ li{
     font-weight: bolder;
     color:#674582;
     text-align: center;
-    margin:20px auto;
     padding:10px;
 }
 
@@ -250,6 +253,9 @@ header{
     line-height: 35px;
     border: 1px solid #63458A;
  }
+.creditos{
+    font-size: 10px;
+}
 
  /**Section about**/
 
@@ -323,9 +329,198 @@ header{
     text-align: center;
  }
 
+/**media query**/
+
+ @media (max-width: 1024px){
+    .navbar__box{
+        width: 70%;
+        height: 70%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 15px auto 0 auto;
+    }   
+    .navbar__logo{
+        height:50%;
+    }
+    
+
+    .navbar__icones{
+        padding: 3px;
+        width: 15%
+    }
+    
+ }
+
+ @media (max-width: 768px){
+    
+    .navbar__logo{
+        height:45%;
+    }
+    
+    .navbar__itens{
+        font-size: 11px;
+    }
+    .navbar__icones{
+        padding: 3px;
+        width: 13%;
+    }
+    header, .banner{
+        background-position: center;
+    }
+    .profile__texto {
+        margin-left: 20px;
+    }
+    .about-me__layout {
+        width: 70%;
+    }
+    .about-me__layout p {
+        font-size: 15px;
+ }
+
+ @media (max-width: 420px){
+    .navbar__box{
+        width: 90%;
+        height: 70%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 15px auto 0 auto;
+    }   
+    .navbar__logo{
+        height:80%;
+    }
+    
+    .navbar__mobile{
+        display:flex;
+    }
+    
+    .navbar__icones{
+        display:none;
+    }
+    .navbar__itens{
+        display:none;
+    }
+
+    .perfil{
+        width:100%;
+        margin: 0 auto;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .perfil{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    
+    .perfil__titulo{
+        width:80%;
+    }
 
 
+    .perfil__links{
+        width:70%;
+        margin: 0 auto 150px auto;
+        display: flex;
+        flex-flow:wrap;
+        justify-content: space-between  ;
+        
+    }
+    
+    .perfil__links img{
+        width:110px;
 
+    }
+    
+    .perfil__links__texto{
+         font-size: 15px;
+
+    }
+    .banner{
+        background-position: center;
+    }
+    .banner__conteudo{
+        width: 80%;
+     
+    }
+    .banner__titulo{
+        font-size: 20px;
+    }
+    .banner__texto{
+        font-size: 12px;
+        padding:5px;
+        margin-bottom: 15px;
+    }
+    
+    }
+    header{
+        background-position: left;
+    }
+    .profile, .quote, .about {
+        width: 75%;
+    }
+    .profile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile__texto {
+        margin-left: 0;
+        width:100%;
+    }  
+
+    .quote__frase {
+
+        font-size: 16px;
+    }
+    .about-me__layout p {
+        font-size: 12px;
+    }
+    .end {
+        width: 50%;
+    }
+
+    .footer{
+        width: 100%;
+        height: 100px;
+        background-color: #323534;
+        color: white;
+    
+    }
+    
+    .footer__box{
+        width: 100%;
+        height:50px;
+        justify-content: space-around;
+        padding-top: 45px;
+        
+    }
+    .footer__itens{
+        width: 30%;
+    }
+    
+    .footer__logo {
+        max-width: 150px;
+        padding: 15px;
+    }
+    
+    .footer__icon{
+        display: none;
+    }
+    .footerlink{
+        display: none;
+    }
+    .footer__copyright{
+        font-size: 8px;
+    }
+
+    
+ }
 
 
 
