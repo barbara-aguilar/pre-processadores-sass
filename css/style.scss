@@ -1,0 +1,539 @@
+$cor-primaria: #674582;
+$cor-secundaria: #C083B9;
+$cor-terciaria: #63458A;
+
+* {
+    box-sizing: border-box;
+    margin: 0 0;
+    padding: 0;
+}
+
+body{ 
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*navbar*/
+.navbar{
+    width: 100%;
+    height:110px;
+    background-color: $cor-primaria;
+    color: white;
+    position: fixed;
+    z-index: 0;
+&__box{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px auto 0 auto;
+}   
+&__logo{
+    height:80%;
+}
+
+&__mobile{
+    display:none;
+}
+
+&__icones{
+    padding: 3px;
+    width: 15%
+}  
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+    margin-right: 15px;
+}
+
+
+/*banner*/
+
+.banner{
+    width: 100%;
+    height:500px;
+    background-image: url(../img/bg-banner-claro.png);
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+&__conteudo{
+    display: block;
+    padding:45px;
+    width:55%;
+    margin-left: 15%;
+    
+}
+&__titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color:white;
+    padding:4px;
+}
+
+&__texto{
+    color:white;
+    padding:4px;
+    margin-bottom: 3%;
+}
+
+&__btn{
+    background-color: $cor-secundaria;
+    color:white;
+    padding:10px;
+    width:100px;
+    border-radius: 3px;
+    margin-top: 5px;
+    align-items: flex-end;
+}
+}
+
+
+/**section Perfil**/
+.perfil{
+    width:100%;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+&__titulo{
+    font-family: 'Roboto Slab', serif;
+    font-weight: bolder;
+    color:$cor-primaria;
+    text-align: center;
+    padding:10px;
+}
+
+&__links{
+    width:70%;
+    margin: 0 auto 150px auto;
+    display: flex;
+    flex-flow:wrap;
+    justify-content: space-between  ;
+    & img{
+        width:170px;
+        background-color:$cor-terciaria; 
+        margin-top: 15px;
+        border-radius: 15px;
+          
+    }
+    
+    &__texto{
+        color:$cor-terciaria;
+        padding: 5px;
+        text-align: center;
+    } 
+}
+}
+
+
+
+
+/**footer**/
+a{
+    text-decoration: none;
+    color: white;
+}
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: #323534;
+    color: white;
+
+    &__box{
+        margin: 0 auto;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__itens{
+        display: block;
+        width: 30%;
+        font-size: 12px;
+        padding: 15px;
+    }
+    
+    &__logo {
+        width: 100%;
+        max-width: 250px;
+        padding: 15px;
+    }
+    
+    &__icon{
+        height: 40px;
+        padding: 0 5px 0 15px;
+    }
+    
+    &__copyright{
+        width: 100%;
+        height: 30px;
+        background-color:#292A2A;
+        color:white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        letter-spacing: 2px;
+        padding:10px;
+        text-align: center;
+    
+    }
+
+}
+
+
+
+/**header PERFIL**/
+header{
+    width: 100%;
+    height:500px;
+    background-image: url(../img/banner.jpg);
+    background-size: cover ;
+    display: flex;
+    align-items: flex-end;
+    padding-top: 150px;;
+    
+}
+.header__titulo{
+    font-family: 'Roboto Slab', serif;
+    font-weight: bolder;
+    font-size: 40px;
+    color: white;
+    margin: 0 auto;
+    padding:15px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px black; 
+}
+
+
+/**section profile**/
+
+.profile, .quote, .about{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    &__img{
+        width: 200px;
+        border-radius: 100%;
+        margin-bottom: 45px;
+        
+    }
+    &__texto{
+        width: 75%;
+        text-align: justify;
+        line-height: 30px;
+        
+    }
+}
+
+.section__titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    color: $cor-terciaria;
+    margin: 20px auto;
+    padding:15px;
+    text-align: center;
+}
+
+/**Section Quote**/
+
+.quote__frase {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    color:$cor-terciaria;
+    margin: 20px auto 50px auto;
+    padding:20px;
+    text-align: justify;
+    line-height: 35px;
+    border: 1px solid $cor-terciaria;
+ }
+.creditos{
+    font-size: 10px;
+}
+
+ /**Section about**/
+
+ .about__titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    color: $cor-terciaria;
+    margin-bottom: 20px;
+ }
+
+ .about__texto{
+    text-align: justify;
+    line-height: 25px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+ }
+
+ .about img{
+     width:100%;
+     margin-bottom: 20px;
+ }
+
+ /**section About Me**/
+ .about-me{
+     background-color: #E4B7E5;
+     width: 100%;
+     height: 150px;
+     margin-top: 50px;
+     margin-bottom: 60px;
+     
+ &__layout{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    margin: 0 auto;
+ }
+
+ &__layout img{
+    height: 150px;
+    padding-right: 50px;
+ }
+
+ &__layout p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    color: $cor-terciaria;
+    line-height: 25px;
+    margin-bottom: 15px;
+
+ }   
+ }
+
+ 
+ .end{
+    width: 30%;
+    margin: 50px auto;
+    text-align: center;
+ }
+
+
+ .end__btn{
+    background-color: $cor-secundaria;
+    color:white;
+    padding:15px;
+    width:250px;
+    border-radius: 3px;
+    margin: 0 auto;
+    text-align: center;
+ }
+
+/**media query**/
+
+ @media (max-width: 1024px){
+    .navbar__box{
+        width: 70%;
+        height: 70%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 15px auto 0 auto;
+    }   
+    .navbar__logo{
+        height:50%;
+    }
+    
+
+    .navbar__icones{
+        padding: 3px;
+        width: 15%
+    }
+    
+ }
+
+ @media (max-width: 768px){
+    
+    .navbar__logo{
+        height:45%;
+    }
+    
+    .navbar__itens{
+        font-size: 11px;
+    }
+    .navbar__icones{
+        padding: 3px;
+        width: 13%;
+    }
+    header, .banner{
+        background-position: center;
+    }
+    .profile__texto {
+        margin-left: 20px;
+    }
+    .about-me__layout {
+        width: 70%;
+    }
+    .about-me__layout p {
+        font-size: 15px;
+ }
+
+ @media (max-width: 420px){
+    .navbar__box{
+        width: 90%;
+        height: 70%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 15px auto 0 auto;
+    }   
+    .navbar__logo{
+        height:80%;
+    }
+    
+    .navbar__mobile{
+        display:flex;
+    }
+    
+    .navbar__icones{
+        display:none;
+    }
+    .navbar__itens{
+        display:none;
+    }
+
+    .perfil{
+        width:100%;
+        margin: 0 auto;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .perfil{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    
+    .perfil__titulo{
+        width:80%;
+    }
+
+
+    .perfil__links{
+        width:70%;
+        margin: 0 auto 150px auto;
+        display: flex;
+        flex-flow:wrap;
+        justify-content: space-between  ;
+        
+    }
+    
+    .perfil__links img{
+        width:110px;
+
+    }
+    
+    .perfil__links__texto{
+         font-size: 15px;
+
+    }
+    .banner{
+        background-position: center;
+    }
+    .banner__conteudo{
+        width: 80%;
+     
+    }
+    .banner__titulo{
+        font-size: 20px;
+    }
+    .banner__texto{
+        font-size: 12px;
+        padding:5px;
+        margin-bottom: 15px;
+    }
+    
+    }
+    header{
+        background-position: left;
+    }
+    .profile, .quote, .about {
+        width: 75%;
+    }
+    .profile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile__texto {
+        margin-left: 0;
+        width:100%;
+    }  
+
+    .quote__frase {
+
+        font-size: 16px;
+    }
+    .about-me__layout p {
+        font-size: 12px;
+    }
+    .end {
+        width: 50%;
+    }
+
+    .footer{
+        width: 100%;
+        height: 100px;
+        background-color: #323534;
+        color: white;
+    
+    }
+    
+    .footer__box{
+        width: 100%;
+        height:50px;
+        justify-content: space-around;
+        padding-top: 45px;
+        
+    }
+    .footer__itens{
+        width: 30%;
+    }
+    
+    .footer__logo {
+        max-width: 150px;
+        padding: 15px;
+    }
+    
+    .footer__icon{
+        display: none;
+    }
+    .footerlink{
+        display: none;
+    }
+    .footer__copyright{
+        font-size: 8px;
+    }
+
+    
+ }
+
+
+
+
